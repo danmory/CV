@@ -14,7 +14,7 @@ section
       align-items: center
       .photo
         width: 400px
-        height: 400px
+        height: 450px
         border-radius: 50%
     .bio-block
       display: flex
@@ -23,32 +23,36 @@ section
   &.skills
     display: flex
     justify-content: center
-    div
-      display: inline-block
-      height: 20px
-      width: 300px
-      text-align: center
-      border: 1px black solid
-    .div-1
-      background: linear-gradient(to right, green 10%, transparent 90%)
-    .div-2
-      background: linear-gradient(to right, green 20%, transparent 80%)
-    .div-3
-      background: linear-gradient(to right, green 30%, transparent 70%)
-    .div-4
-      background: linear-gradient(to right, green 40%, transparent 60%)
-    .div-5
-      background: linear-gradient(to right, green 50%, transparent 50%)
-    .div-6
-      background: linear-gradient(to right, green 60%, transparent 40%)
-    .div-7
-      background: linear-gradient(to right, green 70%, transparent 30%)
-    .div-8
-      background: linear-gradient(to right, green 80%, transparent 20%)
-    .div-9
-      background: linear-gradient(to right, green 90%, transparent 10%)
-    .div-10
-      background: linear-gradient(to right, green 100%, transparent 0%)
+    .skill
+      .skill-desc
+        width: 300px
+        margin: 0
+      div
+        display: inline-block
+        height: 10px
+        width: 300px
+        text-align: center
+        font-size: 10px
+      .div-1
+        background: linear-gradient(to right, #3cb371 10%, transparent 90%)
+      .div-2
+        background: linear-gradient(to right, #3cb371 20%, transparent 80%)
+      .div-3
+        background: linear-gradient(to right, #3cb371 30%, transparent 70%)
+      .div-4
+        background: linear-gradient(to right, #3cb371 40%, transparent 60%)
+      .div-5
+        background: linear-gradient(to right, #3cb371 50%, transparent 50%)
+      .div-6
+        background: linear-gradient(to right, #3cb371 60%, transparent 40%)
+      .div-7
+        background: linear-gradient(to right, #3cb371 70%, transparent 30%)
+      .div-8
+        background: linear-gradient(to right, #3cb371 80%, transparent 20%)
+      .div-9
+        background: linear-gradient(to right, #3cb371 90%, transparent 10%)
+      .div-10
+        background: linear-gradient(to right, #3cb371 100%, transparent 0%)
 
 
 
@@ -58,7 +62,10 @@ section
   section
     font-size: 15px
     &.about_me
-      display: block
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
       ul
         margin: 20px 0
         padding: 0

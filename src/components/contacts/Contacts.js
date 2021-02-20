@@ -8,17 +8,21 @@ import gitlab from '../../assets/gitlab.png'
 
 export default function Contacts(){
 
-    const contactsUrl = [telegram, vk, github, gitlab]
-    const links = ['https://t.me/danmory', 'https://www.vk.com/babydanila', 'https://github.com/danmory', 'https://gitlab.com/danmory']
+    const links = [
+        [telegram, 'https://t.me/danmory'],
+        [vk, 'https://www.vk.com/babydanila'],
+        [github, 'https://github.com/danmory'],
+        [gitlab, 'https://gitlab.com/danmory']
+    ]
 
     return (
         <div className="contacts">
-            <p>Contact me:</p>
+            <p>Contact_me:</p>
             <ul>
-                {contactsUrl.map((item, idx) =>
+                {links.map(item =>
                     <li>
-                        <a href={links[idx]} target='_blank'>
-                            <img src={item} alt='logo'/>
+                        <a href={item[1]} target='_blank' className='contact'>
+                            <img src={item[0]} alt='logo'/>
                         </a>
                     </li>
                 )}
